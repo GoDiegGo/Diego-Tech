@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>主網頁</title>
+        <link rel="stylesheet" type="text/css" href="./CSS_Folder/main webpage.css">
+        <script type="text/javascript" src="./JS_Folder/for_main_JS.js"></script>
+        <audio id="effect_sound">  <!-- audio為音效元素： source元素用於擺放需要用到的資源-->
+            <source src="video_folder//Windows 10 installation video.mp4" type="video/mp4">
+            <source src="音效素材_folder/bark_angry.mp3" type="audio/mp3">
+            <source src="音效素材_folder/bark_wail.mp3" type="audio/mp3">
+            <source src="音效素材_folder/bark_provocation.mp3" type="audio/mp3">
+            <source src="音效素材_folder/bomb_explosion1.mp3" type="audio/mp3">
+            <source src="音效素材_folder/bomb_explosion2.mp3" type="audio/mp3">
+        </audio>
+    </head>
+    <body>
+        <script>
+            window.onload = dog_Greeting;
+            </script>
+        <font style="color: blueviolet; margin-right: 0px;">友好問候：</font><p id="Current_time" style="margin-left: 20px;"></p>
+        <p></p>
+        <video src="video_folder//Windows 10 installation video.mp4" style="height: 1480; width: 720px; border: solid 1px black; object-fit: fill;"></video>
+        <p></p>
+        <img src="images_folder\\dog picture1.png" width="1080">你可以叫我: <font size="100px" color="red">狗子</font>
+        <input type="text" id="talk_button" name="talk_button" placeholder="請輸入想交談文字...">
+        <p>
+        <form id="form1">
+            <button type="button" style="width: 350px; height: 45pt;" onclick="Draw_art()"><font size="5" color="purple" value="Waiting for users...">Start draw！</yet></font></button>
+            <br>
+            <button type="button" style="width: 350px; height: 45pt; color: rgba(255, 0, 0, 0.955)" onclick="dog_reply()"><font size="6">講話</font></button>
+            <br>
+                <select id="selection" name="selection">// id：就像標籤號碼而name:就像標籤名稱 //
+                    <option value="--Please choose  of shape that you want--">--Please choose  of shape that you want--</option>
+                    <option value="squre">squre shape</option>
+                    <option value="circle">circle shape</option>
+                    <option value="triangle">triangle shape</option>
+                    <option value="rectangle">rectangle shape</option>
+                    <option value="star">star shape</option>
+                </select>
+            </br>
+        </form>
+        <br>
+        狗子回答：<p2 id='ansewer'></p2>
+        </br>
+        <a href="C:/website_structure/website_structure.html">計算機子網頁!</a></p><a href="index.html">Author Guides！</a>
+        <footer style="text-align: center; color:rgba(14, 133, 188, 0.529)">Copyright by Diego Liao</footer>
+    </body>
+</html>
